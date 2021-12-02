@@ -117,9 +117,12 @@ document.addEventListener('DOMContentLoaded', () => {
         
         
       const billsAndTips = [ bills[0] + tips[0], bills[1] + tips[1], bills[2]+tips[2]];
-      console.log(billsAndTips);
+      //domIdent.innerHTML = billsAndTips;
 
+      let sum = 0;
+      for(let i = 0; i < billsAndTips.length; i++){
+          sum += billsAndTips[i];
+      }
 
-    
-
+      domIdent.innerHTML = `Entire bill if everyone pays separately is $${sum}.`;
 
