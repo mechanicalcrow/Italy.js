@@ -126,8 +126,8 @@ document.addEventListener('DOMContentLoaded', () => {
 	
         const bills = [125, 555, 44];
         
-         const tableBill = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
-        console.log(tableBill);
+         const tableBill = [ calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[bills.length - 1])];
+        domIdent.innerHTML = `${tableBill}`;
 
 
 
