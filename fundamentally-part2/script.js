@@ -2,6 +2,7 @@
 
 const domID = document.getElementById('domID');
 const domClass = document.getElementsByClassName('domClass');
+const domIdent = document.getElementById('drinking');
 // function twoPies(first, second) {
 // 	const pies = `Make two pies: ${first} pie and ${second} pie.`;
 // 	return pies;
@@ -103,3 +104,32 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 });
          
+//let bill =0;
+
+
+	function calcTip (bill) {
+		
+		if(bill >= 50 && bill <= 300) {
+			let totalBill = bill * 1.15;
+			return totalBill = totalBill.toFixed(2);
+			
+			// domIdent.innerHTML = `Your total bill comes to $${totalBill}, with $${bill} for the bill and $${totalBill -
+			// 	bill} for the added tip.`;
+		} else {
+			 let totalBill = bill * 1.20;
+			 return totalBill = totalBill.toFixed(2);
+			// domIdent.innerHTML = `Your total bill comes to $${totalBill}, with $${bill} for the bill and $${totalBill -
+			// 	bill} for the added tip.`;
+			}
+	
+	}
+	
+        const bills = [125, 555, 44];
+        const angie = calcTip(bills[0]);
+    
+         const patti = calcTip(bills[1]);
+
+         const george = calcTip(bills[2]);
+
+         console.log(angie, patti, george);
+
