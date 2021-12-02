@@ -107,27 +107,19 @@ document.addEventListener('DOMContentLoaded', () => {
 //let bill =0;
 
 
-	function calcTip (bill) {
-		
-		if(bill >= 50 && bill <= 300) {
-			let totalBill = bill * 1.15;
-			return totalBill = totalBill.toFixed(2);
-			
-			// domIdent.innerHTML = `Your total bill comes to $${totalBill}, with $${bill} for the bill and $${totalBill -
-			// 	bill} for the added tip.`;
-		} else {
-			 let totalBill = bill * 1.20;
-			 return totalBill = totalBill.toFixed(2);
-			// domIdent.innerHTML = `Your total bill comes to $${totalBill}, with $${bill} for the bill and $${totalBill -
-			// 	bill} for the added tip.`;
-			}
-	
-	}
+	const calcTip = function (bill) {
+        return bill >= 50 && bill <= 300 ? bill * .15 : bill * .20;
+    }
 	
         const bills = [125, 555, 44];
         
-         const tableBill = [ calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[bills.length - 1])];
-        domIdent.innerHTML = `${tableBill}`;
+         const tips = [ calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[bills.length - 1])];
+        
+        
+      const billsAndTips = [ bills[0] + tips[0], bills[1] + tips[1], bills[2]+tips[2]];
+      console.log(billsAndTips);
 
+
+    
 
 
