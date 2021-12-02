@@ -125,11 +125,9 @@ document.addEventListener('DOMContentLoaded', () => {
 	}
 	
         const bills = [125, 555, 44];
-        const angie = calcTip(bills[0]);
-    
-         const patti = calcTip(bills[1]);
+        
+         const tableBill = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+        console.log(tableBill);
 
-         const george = calcTip(bills[2]);
 
-         console.log(angie, patti, george);
 
