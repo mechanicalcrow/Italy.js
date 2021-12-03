@@ -124,5 +124,6 @@ document.addEventListener('DOMContentLoaded', () => {
           sum += billsAndTips[i];
       }
 
-      domIdent.innerHTML = `Entire bill if everyone pays separately is $${sum}.`;
+      domIdent.innerHTML = `Entire bill if everyone pays separately is $${sum}. All bills each are $${bills}; tips each are $${tips}; bills and tips added are each $${billsAndTips}.`;
 
+console.log(bills, tips, billsAndTips, sum);
