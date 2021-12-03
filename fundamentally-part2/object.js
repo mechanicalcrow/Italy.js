@@ -9,10 +9,10 @@ const Mannerly = {
     bankBalance: 16770,
     birthYear: 2003,
     calcAge: function (birthYear){
-      return  2022 - birthYear;
+      return  2022 - this.birthYear;
     }
 }
 
 
 //domID.innerHTML = `${Mannerly.fullName} is my name and ${Mannerly.job} at $${Mannerly.hourlyRate} hourly is my game.`;
-domID.innerHTML = Mannerly.calcAge(2002);
+domID.innerHTML = Mannerly.calcAge();
