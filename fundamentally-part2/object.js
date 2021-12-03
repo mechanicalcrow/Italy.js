@@ -6,8 +6,13 @@ const Mannerly = {
     fullName: "Mannerly Jones",
     job: "prostitution",
     hourlyRate: 56,
-    bankBalance: 16770
+    bankBalance: 16770,
+    birthYear: 2003,
+    calcAge: function (birthYear){
+      return  2022 - birthYear;
+    }
 }
 
-// domID.innerHTML = `My name is ${Mannerly.fullName}. I am work in ${job} and earn $${hourlyRate} per hour.`;
-domID.innerHTML = `${Mannerly.fullName} is my name and ${Mannerly.job} at $${Mannerly.hourlyRate} hourly is my game.`;
+
+//domID.innerHTML = `${Mannerly.fullName} is my name and ${Mannerly.job} at $${Mannerly.hourlyRate} hourly is my game.`;
+ console.log(Mannerly.calcAge(2000));
