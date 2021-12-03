@@ -15,4 +15,4 @@ const Mannerly = {
 
 
 //domID.innerHTML = `${Mannerly.fullName} is my name and ${Mannerly.job} at $${Mannerly.hourlyRate} hourly is my game.`;
- console.log(Mannerly.calcAge(2000));
+domID.innerHTML = Mannerly.calcAge(2002);
