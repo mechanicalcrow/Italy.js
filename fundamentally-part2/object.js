@@ -12,12 +12,12 @@ const Mannerly = {
      this.age = 2022 - this.birthYear;
      return this.age;
     }
-}
+};
 
-
-domID.innerHTML = `${Mannerly.fullName} is my name and ${Mannerly.job} at $${Mannerly.hourlyRate} hourly is my game. Oh, and I am ${Mannerly.calcAge()}`;
-// Mannerly.calcAge();
-// domID.innerHTML = Mannerly.age;
+Mannerly.calcAge();
+domID.innerHTML = `${Mannerly.fullName} is my name and ${Mannerly.job} at $${Mannerly.hourlyRate} hourly is my game. Oh, and I am ${Mannerly.age}`;
+//
+ //domID.innerHTML = `${Mannerly.age}`;
 
 // const arr = [1, 2, 3, 4, 5];
 
