@@ -29,35 +29,51 @@
 // }
 // domID.innerHTML = `The product of the array ${arr} is simply ${product}. Pay up the $100, please.`;
 
-const Mark = {
-    fullName: "Mark Miller",
-    mass: 70,
-    height: 1.8,
-    calcBMI: function (){
-        this.bmi = (this.mass / this.height **2).toFixed(2);
-        return this.bmi;
-    }
-};
-Mark.calcBMI();
-console.log(Mark.bmi);
-const John = {
-    fullName: "John Smith",
-    mass: 92,
-    height: 1.95,
-    calcBMI: function (){
-        this.bmi= (this.mass / this.height **2 ).toFixed(2);
-        return this.bmi;
-    }
-};
-John.calcBMI();
+// const Mark = {
+//     fullName: "Mark Miller",
+//     mass: 70,
+//     height: 1.8,
+//     calcBMI: function (){
+//         this.bmi = (this.mass / this.height **2).toFixed(2);
+//         return this.bmi;
+//     }
+// };
+// Mark.calcBMI();
+// console.log(Mark.bmi);
+// const John = {
+//     fullName: "John Smith",
+//     mass: 92,
+//     height: 1.95,
+//     calcBMI: function (){
+//         this.bmi= (this.mass / this.height **2 ).toFixed(2);
+//         return this.bmi;
+//     }
+// };
+// John.calcBMI();
 
-if (John.bmi > Mark.bmi){
-    domID.innerHTML = `${John.fullName} with the BMI ${John.bmi} is fatter than ${Mark.fullName}, who has ${Mark.bmi} BMI.`;
+// if (John.bmi > Mark.bmi){
+//     domID.innerHTML = `${John.fullName} with the BMI ${John.bmi} is fatter than ${Mark.fullName}, who has ${Mark.bmi} BMI.`;
 
-} else if(John.bmi > Mark.bmi){
-    domID.innerHTML = `${John.fullName} with the BMI ${John.bmi} is as fat as ${Mark.fullName}, who has ${Mark.bmi} BMI.`;
-} else {
-    domID.innerHTML = `${Mark.fullName} with the BMI ${Mark.bmi} is fatter than ${John.fullName}, who has ${John.bmi} BMI.`;
+// } else if(John.bmi > Mark.bmi){
+//     domID.innerHTML = `${John.fullName} with the BMI ${John.bmi} is as fat as ${Mark.fullName}, who has ${Mark.bmi} BMI.`;
+// } else {
+//     domID.innerHTML = `${Mark.fullName} with the BMI ${Mark.bmi} is fatter than ${John.fullName}, who has ${John.bmi} BMI.`;
+// }
+
+//const chickens = "This string.";
+
+for(let chickCount = 1; chickCount <= 8; chickCount++){
+   domID.innerHTML = `${chickCount}!`;
+    
 }
+
+function myFunction(){
+    let li = document.createElement('li');
+    document.querySelector('#list').append(li)=`me`;
+}
+
+
+
+
 
 
