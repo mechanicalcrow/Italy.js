@@ -31,31 +31,33 @@
 
 const Mark = {
     fullName: "Mark Miller",
-    mass: 78,
-    height: 1.69,
+    mass: 70,
+    height: 1.8,
     calcBMI: function (){
-        this.bmi = this.mass / this.height;
-        return this.bmi.toFixed(2);
+        this.bmi = (this.mass / this.height **2).toFixed(2);
+        return this.bmi;
     }
 };
-
+Mark.calcBMI();
+console.log(Mark.bmi);
 const John = {
     fullName: "John Smith",
     mass: 92,
     height: 1.95,
     calcBMI: function (){
-        this.bmi = this.mass / this.height;
-        return this.bmi.toFixed(2);
+        this.bmi= (this.mass / this.height **2 ).toFixed(2);
+        return this.bmi;
     }
 };
+John.calcBMI();
 
-if (John.calcBMI() > Mark.calcBMI()){
-    domID.innerHTML = `${John.fullName} with the BMI ${John.calcBMI()} is fatter than ${Mark.fullName}, who has ${Mark.calcBMI()} BMI.`;
+if (John.bmi > Mark.bmi){
+    domID.innerHTML = `${John.fullName} with the BMI ${John.bmi} is fatter than ${Mark.fullName}, who has ${Mark.bmi} BMI.`;
 
-} else if(John.calcBMI() > Mark.calcBMI()){
-    domID.innerHTML = `${John.fullName} with the BMI ${John.calcBMI()} is as fat as ${Mark.fullName}, who has ${Mark.calcBMI()} BMI.`;
+} else if(John.bmi > Mark.bmi){
+    domID.innerHTML = `${John.fullName} with the BMI ${John.bmi} is as fat as ${Mark.fullName}, who has ${Mark.bmi} BMI.`;
 } else {
-    domID.innerHTML = `${Mark.fullName} with the BMI ${Mark.calcBMI()} is fatter than ${John.fullName}, who has ${John.calcBMI()} BMI.`;
+    domID.innerHTML = `${Mark.fullName} with the BMI ${Mark.bmi} is fatter than ${John.fullName}, who has ${John.bmi} BMI.`;
 }
 
 
