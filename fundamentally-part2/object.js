@@ -31,23 +31,31 @@
 
 const Mark = {
     fullName: "Mark Miller",
-    mass: 80,
-    height: 120,
+    mass: 78,
+    height: 1.69,
     calcBMI: function (){
         this.bmi = this.mass / this.height;
-        return this.bmi;
+        return this.bmi.toFixed(2);
     }
 };
 
 const John = {
     fullName: "John Smith",
-    mass: 100,
-    height: 160,
+    mass: 92,
+    height: 1.95,
     calcBMI: function (){
         this.bmi = this.mass / this.height;
-        return this.bmi;
+        return this.bmi.toFixed(2);
     }
 };
 
+if (John.calcBMI() > Mark.calcBMI()){
+    domID.innerHTML = `${John.fullName} with the BMI ${John.calcBMI()} is fatter than ${Mark.fullName}, who has ${Mark.calcBMI()} BMI.`;
 
-domID.innerHTML = `${John.fullName} has ${John.calcBMI()} on the body mass index. ${Mark.fullName} has ${Mark.calcBMI()}.`;
+} else if(John.calcBMI() > Mark.calcBMI()){
+    domID.innerHTML = `${John.fullName} with the BMI ${John.calcBMI()} is as fat as ${Mark.fullName}, who has ${Mark.calcBMI()} BMI.`;
+} else {
+    domID.innerHTML = `${Mark.fullName} with the BMI ${Mark.calcBMI()} is fatter than ${John.fullName}, who has ${John.calcBMI()} BMI.`;
+}
+
+
