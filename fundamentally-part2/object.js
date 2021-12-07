@@ -60,17 +60,14 @@
 //     domID.innerHTML = `${Mark.fullName} with the BMI ${Mark.bmi} is fatter than ${John.fullName}, who has ${John.bmi} BMI.`;
 // }
 
-//const chickens = "This string.";
+const countEngine = "This string.";
 
-for(let chickCount = 1; chickCount <= 8; chickCount++){
-   domID.innerHTML = `${chickCount}!`;
+for(let repCount = 1; repCount <= countEngine.length; repCount++){
+   console.log(`${repCount}! count.`);
     
 }
 
-function myFunction(){
-    let li = document.createElement('li');
-    document.querySelector('#list').append(li)=`me`;
-}
+
 
 
 
