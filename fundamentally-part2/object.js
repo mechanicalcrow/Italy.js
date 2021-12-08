@@ -83,12 +83,20 @@ const Mannerly = [
 
  //domID.innerHTML = `${Mannerly.age}`;
 
- const types = [];
+//  const types = [];
 
-for(let i = 0; i < Mannerly.length; i++){
-  // types[i] = typeof Mannerly[i];
-  types.push(typeof Mannerly[i]);
+// for(let i = 0; i < Mannerly.length; i++){
+//   // types[i] = typeof Mannerly[i];
+//   types.push(typeof Mannerly[i]);
+// }
+// domID.innerHTML = types;
+const years = [1966, 1969, 1976, 1990];
+const ages = [];
+
+for(let i = 0; i < years.length; i++){
+  ages.push(2022 - years[i]);
 }
-domID.innerHTML = types;
+
+domID.innerHTML = ages;
 
 
