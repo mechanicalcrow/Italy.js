@@ -86,7 +86,8 @@ const Mannerly = [
  const types = [];
 
 for(let i = 0; i < Mannerly.length; i++){
-  types[i] = typeof Mannerly[i];
+  // types[i] = typeof Mannerly[i];
+  types.push(typeof Mannerly[i]);
 }
 domID.innerHTML = types;
 
