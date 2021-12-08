@@ -60,17 +60,31 @@
 //     domID.innerHTML = `${Mark.fullName} with the BMI ${Mark.bmi} is fatter than ${John.fullName}, who has ${John.bmi} BMI.`;
 // }
 
-const countEngine = "This string.";
+// const countEngine = "This string.";
 
-for(let repCount = 1; repCount <= countEngine.length; repCount++){
-   console.log(`${repCount}! count.`);
+// for(let repCount = 1; repCount <= countEngine.length; repCount++){
+//   let li = document.createElement('li');
+//   document.querySelector('ul').append(li) = `Rep ${repCount}`;
     
+// }
+
+
+
+const Mannerly = [
+    "Mannerly Jones",
+     "prostitution",
+    56,
+   16670,
+   2003 - 1977,
+    [ "Debra Spark",  "Michael Parker", "David Shields", "Jeremy Gavron", "Maud Casey"]
+  ];
+
+
+
+ //domID.innerHTML = `${Mannerly.age}`;
+
+for(let i = 0; i < Mannerly.length; i++){
+  console.log(Mannerly[i]);
 }
-
-
-
-
-
-
 
 
