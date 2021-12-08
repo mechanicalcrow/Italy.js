@@ -88,6 +88,6 @@ const Mannerly = [
 for(let i = 0; i < Mannerly.length; i++){
   types[i] = typeof Mannerly[i];
 }
-console.log(types);
+domID.innerHTML = types;
 
 
