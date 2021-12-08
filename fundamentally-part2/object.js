@@ -84,7 +84,7 @@ const Mannerly = [
  //domID.innerHTML = `${Mannerly.age}`;
 
 for(let i = 0; i < Mannerly.length; i++){
-  domID.innerHTML = Mannerly[i];
+  console.log(Mannerly[i],  typeof Mannerly[i]);
 }
 
 
