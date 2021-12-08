@@ -78,8 +78,13 @@ const Mannerly = [
    2003 - 1977,
     [ "Debra Spark",  "Michael Parker", "David Shields", "Jeremy Gavron", "Maud Casey"]
   ];
-
-
+ 
+  const types =[]
+// continute and break
+for(let i = 0; i < Mannerly.length; i++){
+  if(typeof Mannerly[i] !== 'number') continue;
+  console.log(Mannerly[i], typeof Mannerly[i]);
+}
 
  //domID.innerHTML = `${Mannerly.age}`;
 
@@ -90,13 +95,13 @@ const Mannerly = [
 //   types.push(typeof Mannerly[i]);
 // }
 // domID.innerHTML = types;
-const years = [1966, 1969, 1976, 1990];
-const ages = [];
+// const years = [1966, 1969, 1976, 1990];
+// const ages = [];
 
-for(let i = 0; i < years.length; i++){
-  ages.push(2022 - years[i]);
-}
+// for(let i = 0; i < years.length; i++){
+//   ages.push(2022 - years[i]);
+// }
 
-domID.innerHTML = ages;
+// domID.innerHTML = ages;
 
 
