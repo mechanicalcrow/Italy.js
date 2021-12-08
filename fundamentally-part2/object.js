@@ -83,8 +83,11 @@ const Mannerly = [
 
  //domID.innerHTML = `${Mannerly.age}`;
 
+ const types = [];
+
 for(let i = 0; i < Mannerly.length; i++){
-  console.log(Mannerly[i],  typeof Mannerly[i]);
+  types[i] = typeof Mannerly[i];
 }
+console.log(types);
 
 
