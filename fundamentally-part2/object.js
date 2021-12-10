@@ -110,17 +110,16 @@
 //   console.log(i, typeof Mannerly[i]);
 //}
 
-for(let exercise = 1; exercise < 4; exercise++){
-  console.log(`-----------------Starting Exercise ${exercise} of 3️⃣`);
-  for(let rep = 1; rep < 6; rep++){
-    console.log(`Set ${exercise}:Pull ups rep ${rep}♻`);
-  }
-}
+// for(let exercise = 1; exercise < 4; exercise++){
+//   console.log(`-----------------Starting Exercise ${exercise} of 3️⃣`);
+//   let rep = 1;
 
-let rep = 1;
+ let dice = Math.trunc(Math.random() * 6) + 1;
+while(dice !== 6){
+  console.log(`You rolled a ${dice}..... 🎲`);
+  dice = Math.trunc(Math.random() * 6) + 1;
+} 
 
-while(rep <= 5){
-  console.log(`Push up rep ${rep}`);
-  rep++;
-}
+//}
+
 
