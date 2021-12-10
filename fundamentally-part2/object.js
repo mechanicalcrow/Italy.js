@@ -114,15 +114,70 @@
 //   console.log(`-----------------Starting Exercise ${exercise} of 3️⃣`);
 //   let rep = 1;
 
- let dice = Math.trunc(Math.random() * 6) + 1;
-while(dice !== 6){
-  console.log(`You rolled a ${dice}..... 🎲`);
-  dice = Math.trunc(Math.random() * 6) + 1;
-  if(dice === 6){
-    console.log(`Loop ends here on a 6!🎛`);
-  }
-} 
+//  let dice = Math.trunc(Math.random() * 6) + 1;
+// while(dice !== 6){
+//   console.log(`You rolled a ${dice}..... 🎲`);
+//   dice = Math.trunc(Math.random() * 6) + 1;
+//   if(dice === 6){
+//     console.log(`Loop ends here on a 6! 🎛`);
+//   }
+// } 
 
 //}
 
+let bills =[22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+let tips = [];
+let totals = [];
 
+
+
+
+	function calcTip (bill) {
+		
+		if(bill >= 50 && bill <= 300) {
+			let tip = bill *0.15;
+			tip = tip.toFixed(2);
+			
+			console.log(tip);
+		} else {
+			 let tip = bill * 0.20;
+			 tip = tip.toFixed(2);
+			console.log(tip);
+			}
+	
+	}
+	//calcTip();
+
+  function calcTotal (bill) {
+		
+		if(bill >= 50 && bill <= 300) {
+			let total = bill *1.15;
+			total = total.toFixed(2);
+			
+			console.log(total);
+		} else {
+			 let total = bill * 1.20;
+			 total = total.toFixed(2);
+			console.log(total);
+			}
+	
+	}
+
+  for( let i = 0; i < bills.length; i++){
+    console.log(`---Bill---`);
+    console.log(bills[i]);
+    console.log(`----Tip----`);
+    tips.push(calcTip(bills[i]));
+    console.log(`-----Account Total----`);
+    totals.push(calcTotal(bills[i]));
+    
+    
+    
+   
+    
+    
+  }
+
+
+
+	
