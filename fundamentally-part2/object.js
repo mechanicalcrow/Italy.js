@@ -113,7 +113,14 @@
 for(let exercise = 1; exercise < 4; exercise++){
   console.log(`-----------------Starting Exercise ${exercise} of 3️⃣`);
   for(let rep = 1; rep < 6; rep++){
-    console.log(`Pull ups repetition: ${rep}♻`);
+    console.log(`Set ${exercise}:Pull ups rep ${rep}♻`);
   }
+}
+
+let rep = 1;
+
+while(rep <= 5){
+  console.log(`Push up rep ${rep}`);
+  rep++;
 }
 
