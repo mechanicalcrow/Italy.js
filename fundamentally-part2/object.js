@@ -70,21 +70,21 @@
 
 
 
-const Mannerly = [
-    "Mannerly Jones",
-     "prostitution",
-    56,
-   16670,
-   2003 - 1977,
-    [ "Debra Spark",  "Michael Parker", "David Shields", "Jeremy Gavron", "Maud Casey"]
-  ];
+// const Mannerly = [
+//     "Mannerly Jones",
+//      "prostitution",
+//     56,
+//    16670,
+//    2003 - 1977,
+//     [ "Debra Spark",  "Michael Parker", "David Shields", "Jeremy Gavron", "Maud Casey"]
+//   ];
  
-  const types =[]
-// continute and break
-for(let i = 0; i < Mannerly.length; i++){
-  if(typeof Mannerly[i] !== 'number') continue;
-  console.log(Mannerly[i], typeof Mannerly[i]);
-}
+//   const types =[]
+// // continute and break
+// for(let i = 0; i < Mannerly.length; i++){
+//   if(typeof Mannerly[i] !== 'number') continue;
+//   console.log(Mannerly[i], typeof Mannerly[i]);
+// }
 
  //domID.innerHTML = `${Mannerly.age}`;
 
@@ -102,6 +102,18 @@ for(let i = 0; i < Mannerly.length; i++){
 //   ages.push(2022 - years[i]);
 // }
 
-// domID.innerHTML = ages;
+//domID.innerHTML = ages;
 
+// const reversal = [];
+// for(let i = Mannerly.length -1; i >= 0; i--){
+//   if(typeof Mannerly[i] !== 'object') continue;
+//   console.log(i, typeof Mannerly[i]);
+//}
+
+for(let exercise = 1; exercise < 4; exercise++){
+  console.log(`-----------------Starting Exercise ${exercise} of 3️⃣`);
+  for(let rep = 1; rep < 6; rep++){
+    console.log(`Pull ups repetition: ${rep}♻`);
+  }
+}
 
