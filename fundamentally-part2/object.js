@@ -123,25 +123,24 @@ const domID = document.querySelector("#output");
 
 //}
 
-// const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
 
-// let total = 0;
-// let tip = 0;
-// let runTotal = 0;
-// let average = 0;
+let total = 0;
+let tip = 0;
+let runTotal = 0;
+let average = 0;
 
-// function calcTip(bill) {
-//   if (bill >= 50 && bill <= 300) {
-//     let tip = bill * 0.15;
-//     tip = tip.toFixed(2);
+function calcTip(bill) {
+  if (bill >= 50 && bill <= 300) {
+    let tip = bill * 0.15;
 
-//     console.log(tip);
-//   } else {
-//     let tip = bill * 0.2;
-//     tip = tip.toFixed(2);
-//     console.log(tip);
-//   }
-// }
+    console.log(tip);
+  } else {
+    let tip = bill * 0.2;
+
+    console.log(tip);
+  }
+}
 
 // function calcTotal(bill) {
 //   if (bill >= 50 && bill <= 300) {
@@ -156,26 +155,25 @@ const domID = document.querySelector("#output");
 //   }
 // }
 //calcTip();
-// for (let i = 0; i < bills.length; i++) {
-//   //
+for (let i = 0; i < bills.length; i++) {
+  //
 
-//   console.log(`---Running Bill---`);
-//   total += bills[i];
-//   console.log(total);
+  console.log(`---Running Bill---`);
+  total += bills[i];
+  console.log(total);
 
-//   console.log(`----Tip----`);
-//   tip += calcTip(total);
-//   //console.log(tip);
+  console.log(`----Tip----`);
+  tip += calcTip(bills[i]);
+  console.log(tip);
 
-//   console.log(`-----Account Running Grand Total----`);
-//   let sum = total + tip;
-//   runTotal += sum;
-//   //console.log(runTotal);
+  console.log(`-----Account Running Grand Total----`);
 
-//   console.log(`=====Average of Total up to here===`);
-//   average = runTotal / bills.length;
-//   //   console.log(average);
-// }
+  console.log(total[i] + tip[i]);
+
+  //   console.log(`=====Average of Total up to here===`);
+  //   average = runTotal / bills.length;
+  //   console.log(average);
+}
 
 // let sum = 0;
 // let sum2 = 0;
@@ -189,25 +187,25 @@ const domID = document.querySelector("#output");
 //   domID.innerHTML = `${sum2}`;
 // console.log(`${totals[3]}`);
 
-const cashPrinciple = [100, 23, 500, 230, 800, 25];
-let interest = 0;
+// const cashPrinciple = [100, 23, 500, 230, 800, 25];
+// let interest = 0;
 
-let total = 0;
+// let total = 0;
 
-let average = 0;
+// let average = 0;
 
-for (let i = 0; i < cashPrinciple.length; i++) {
-  total += cashPrinciple[i];
-  console.log(`----Cash----`);
-  console.log(total);
+// for (let i = 0; i < cashPrinciple.length; i++) {
+//   total += cashPrinciple[i];
+//   console.log(`----Cash----`);
+//   console.log(total);
 
-  interest += cashPrinciple[i] * 0.07;
-  console.log(`----Interest----`);
-  console.log(interest);
+//   interest += cashPrinciple[i] * 0.07;
+//   console.log(`----Interest----`);
+//   console.log(interest);
 
-  console.log(`----GrandTotal---`);
-  console.log(total + interest);
+//   console.log(`----GrandTotal---`);
+//   console.log(total + interest);
 
-  console.log(`-----average of totals---`);
-  console.log((total + interest) / cashPrinciple.length);
-}
+//   console.log(`-----average of totals---`);
+//   console.log((total + interest) / cashPrinciple.length);
+// }
