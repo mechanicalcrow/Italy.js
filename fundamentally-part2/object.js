@@ -1,6 +1,6 @@
-'use strict';
+"use strict";
 
- const domID = document.querySelector('#output');
+const domID = document.querySelector("#output");
 
 // const Mannerly = {
 //     fullName: "Mannerly Jones",
@@ -17,7 +17,7 @@
 // Mannerly.calcAge();
 // domID.innerHTML = `${Mannerly.fullName} is my name and ${Mannerly.job} at $${Mannerly.hourlyRate} hourly is my game. Oh, and I am ${Mannerly.age}`;
 //
- //domID.innerHTML = `${Mannerly.age}`;
+//domID.innerHTML = `${Mannerly.age}`;
 
 // const arr = [1, 2, 3, 4, 5];
 
@@ -25,7 +25,7 @@
 
 // for(let i = 0; i < arr.length; i++ ){
 //     product = product * arr[i];
-    
+
 // }
 // domID.innerHTML = `The product of the array ${arr} is simply ${product}. Pay up the $100, please.`;
 
@@ -65,10 +65,8 @@
 // for(let repCount = 1; repCount <= countEngine.length; repCount++){
 //   let li = document.createElement('li');
 //   document.querySelector('ul').append(li) = `Rep ${repCount}`;
-    
+
 // }
-
-
 
 // const Mannerly = [
 //     "Mannerly Jones",
@@ -78,7 +76,7 @@
 //    2003 - 1977,
 //     [ "Debra Spark",  "Michael Parker", "David Shields", "Jeremy Gavron", "Maud Casey"]
 //   ];
- 
+
 //   const types =[]
 // // continute and break
 // for(let i = 0; i < Mannerly.length; i++){
@@ -86,7 +84,7 @@
 //   console.log(Mannerly[i], typeof Mannerly[i]);
 // }
 
- //domID.innerHTML = `${Mannerly.age}`;
+//domID.innerHTML = `${Mannerly.age}`;
 
 //  const types = [];
 
@@ -121,63 +119,77 @@
 //   if(dice === 6){
 //     console.log(`Loop ends here on a 6! 🎛`);
 //   }
-// } 
+// }
 
 //}
 
-let bills =[22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+let bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
 let tips = [];
 let totals = [];
 
+function calcTip(bill) {
+  if (bill >= 50 && bill <= 300) {
+    let tip = bill * 0.15;
+    tip = tip.toFixed(2);
 
-
-
-	function calcTip (bill) {
-		
-		if(bill >= 50 && bill <= 300) {
-			let tip = bill *0.15;
-			tip = tip.toFixed(2);
-			
-			console.log(tip);
-		} else {
-			 let tip = bill * 0.20;
-			 tip = tip.toFixed(2);
-			console.log(tip);
-			}
-	
-	}
-	//calcTip();
-
-  function calcTotal (bill) {
-		
-		if(bill >= 50 && bill <= 300) {
-			let total = bill *1.15;
-			total = total.toFixed(2);
-			
-			console.log(total);
-		} else {
-			 let total = bill * 1.20;
-			 total = total.toFixed(2);
-			console.log(total);
-			}
-	
-	}
-
-  for( let i = 0; i < bills.length; i++){
-    console.log(`---Bill---`);
-    console.log(bills[i]);
-    console.log(`----Tip----`);
-    tips.push(calcTip(bills[i]));
-    console.log(`-----Account Total----`);
-    totals.push(calcTotal(bills[i]));
-    
-    
-    
-   
-    
-    
+    console.log(tip);
+  } else {
+    let tip = bill * 0.2;
+    tip = tip.toFixed(2);
+    console.log(tip);
   }
+}
+//calcTip();
 
+function calcTotal(bill) {
+  if (bill >= 50 && bill <= 300) {
+    let total = bill * 1.15;
+    total = total.toFixed(2);
 
+    console.log(total);
+  } else {
+    let total = bill * 1.2;
+    total = total.toFixed(2);
+    console.log(total);
+  }
+}
 
-	
+for (let i = 0; i < bills.length; i++) {
+  console.log(`---Bill---`);
+  console.log(bills[i]);
+  console.log(`----Tip----`);
+  tips.push(calcTip(bills[i]));
+  console.log(`-----Account Total----`);
+  totals.push(calcTotal(bills[i]));
+  console.log(`=====Grand Total of All Accounts===`);
+}
+
+// let sum = 0;
+// let sum2 = 0;
+
+//   for(let j = 0; j < bills.length; j++){
+// // sum = sum + bills[j];
+// sum2 = sum2 + tips[j];
+
+//   }
+
+//   domID.innerHTML = `${sum2}`;
+console.log(`${totals[3]}`);
+
+const cashPrinciple = [100, 23, 500, 230, 800, 25];
+let interest = 0;
+
+let total = 0;
+
+for (let i = 0; i < cashPrinciple.length; i++) {
+  total += cashPrinciple[i];
+  console.log(`----Cash----`);
+  console.log(total);
+
+  interest += cashPrinciple[i] * 0.07;
+  console.log(`----Interest----`);
+
+  console.log(interest);
+  console.log(`----GrandTotal---`);
+  console.log(total + interest);
+}
