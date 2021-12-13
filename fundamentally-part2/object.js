@@ -127,15 +127,9 @@ const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
 
 let totals = [];
 let tips = [];
-let runTotal = [];
-let average = [];
 
 function calcTip(bill) {
   return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
-}
-
-function calcAverage(sum) {
-  return sum / bills.length;
 }
 
 for (let i = 0; i < bills.length; i++) {
@@ -145,48 +139,14 @@ for (let i = 0; i < bills.length; i++) {
   totals.push(tip + bills[i]);
   console.log(bills[i], tips[i], totals[i]);
 }
+
 console.log(`=====Average of All Totals===`);
-let sum = 0;
-for (let j = 0; j < bills.length; j++) {
-  if (totals.length === bills.length) {
-    sum += totals[j];
-    console.log(calcAverage(sum * bills.length));
-    //   average = runTotal / bills.length;
-    //   console.log(average);
+const calcAverage = (arr) => {
+  let sum = 0;
+  for (let j = 0; j < arr.length; j++) {
+    sum += arr[j];
   }
-}
-
-// let sum = 0;
-// let sum2 = 0;
-
-//   for(let j = 0; j < bills.length; j++){
-// // sum = sum + bills[j];
-// sum2 = sum2 + tips[j];
-
-//   }
-
-//   domID.innerHTML = `${sum2}`;
-// console.log(`${totals[3]}`);
-
-// const cashPrinciple = [100, 23, 500, 230, 800, 25];
-// let interest = 0;
-
-// let total = 0;
-
-// let average = 0;
-
-// for (let i = 0; i < cashPrinciple.length; i++) {
-//   total += cashPrinciple[i];
-//   console.log(`----Cash----`);
-//   console.log(total);
-
-//   interest += cashPrinciple[i] * 0.07;
-//   console.log(`----Interest----`);
-//   console.log(interest);
-
-//   console.log(`----GrandTotal---`);
-//   console.log(total + interest);
-
-//   console.log(`-----average of totals---`);
-//   console.log((total + interest) / cashPrinciple.length);
-//
+  return sum / arr.length;
+};
+let boo = calcAverage(totals);
+console.log(boo);
