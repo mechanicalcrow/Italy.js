@@ -14,7 +14,18 @@ for (let i = 0; i < bills.length; i++) {
   const bill = bills[i];
   const tip = calcTips(bills[i]);
   totals.push(bill + tip);
+  const total = totals[i];
   tips.push(tip);
 
-  console.log(bills, tips, totals);
+  console.log(`Bill: $${bill} Tips: $${tip} Total: $${total}`);
 }
+
+function calcT(arr) {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+  }
+  console.log(`$${sum}`);
+}
+console.log(`********Year End Total for All Bills********`);
+calcT(totals);
