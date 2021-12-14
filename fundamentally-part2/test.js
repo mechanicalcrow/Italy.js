@@ -1,6 +1,6 @@
 "use strict";
 
-domID = document.querySelector("#domID");
+const domID = document.querySelector("#domID");
 
 const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
 
@@ -9,3 +9,12 @@ let tips = [];
 
 const calcTips = (bill) =>
   bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+
+for (let i = 0; i < bills.length; i++) {
+  const bill = bills[i];
+  const tip = calcTips(bills[i]);
+  totals.push(bill + tip);
+  tips.push(tip);
+
+  console.log(bills, tips, totals);
+}
