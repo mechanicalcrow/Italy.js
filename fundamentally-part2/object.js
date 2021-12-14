@@ -154,7 +154,7 @@ const temp = [-2, -1, 0, "error", 1, 10, 11];
 const newArr = [];
 
 function rangeFinder(arr) {
-  console.log(`${Math.min(...arr) - Math.max(...arr)}`);
+  console.log(`${Math.max(...arr) - Math.min(...arr)}`);
 }
 
 for (let i = 0; i < temp.length; i++) {
