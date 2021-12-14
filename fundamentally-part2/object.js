@@ -156,13 +156,11 @@ const newArr = [];
 function rangeFinder(arr) {
   console.log(`${Math.min(...arr) - Math.max(...arr)}`);
 }
-rangeFinder([1, 4, 6, -1, 5]);
 
-// for (let i = 0; i < temp.length; i++) {
-//   if (typeof temp[i] !== "number") continue;
-//   let justNumbers = temp[i];
-//   newArr.push(justNumbers);
-//   //console.log(lowest);
-// }
+for (let i = 0; i < temp.length; i++) {
+  if (typeof temp[i] !== "number") continue;
 
-// console.log(newArr);
+  newArr.push(temp[i]);
+}
+
+rangeFinder(newArr);
