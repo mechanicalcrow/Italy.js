@@ -123,30 +123,37 @@ const domID = document.querySelector("#output");
 
 //}
 
-const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+// const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
 
-let totals = [];
-let tips = [];
+// let totals = [];
+// let tips = [];
 
-function calcTip(bill) {
-  return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+// const calcTips = (bill) =>
+//   bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+
+// for (let i = 0; i < bills.length; i++) {
+//   const bill = bills[i];
+//   const tip = calcTips(bills[i]);
+//   totals.push(bill + tip);
+//   const total = totals[i];
+//   tips.push(tip);
+
+//   console.log(`Bill: $${bill} Tips: $${tip} Total: $${total}`);
+// }
+
+// function calcT(arr) {
+//   let sum = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     sum += arr[i];
+//   }
+//   console.log(`$${sum / arr.length}`);
+// }
+// console.log(`********Year End Average of All Bills********`);
+// calcT(totals);
+const temp = [-2, -1, 0, "error", 1, 10, 11];
+
+for (let i = 0; i < temp.length; i++) {
+  if (typeof temp[i] !== "number") continue;
+  console.log(Math.min(...temp));
+  //console.log(lowest);
 }
-
-for (let i = 0; i < bills.length; i++) {
-  console.log(`----Bill + Tip = Total----`);
-  const tip = calcTip(bills[i]);
-  tips.push(tip);
-  totals.push(tip + bills[i]);
-  console.log(bills[i], tips[i], totals[i]);
-}
-
-console.log(`=====Average of All Totals===`);
-const calcAverage = (arr) => {
-  let sum = 0;
-  for (let j = 0; j < arr.length; j++) {
-    sum += arr[j];
-  }
-  return sum / arr.length;
-};
-let boo = calcAverage(totals);
-console.log(boo);
