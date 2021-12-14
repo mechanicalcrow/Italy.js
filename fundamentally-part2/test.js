@@ -25,7 +25,7 @@ function calcT(arr) {
   for (let i = 0; i < arr.length; i++) {
     sum += arr[i];
   }
-  console.log(`$${sum}`);
+  console.log(`$${sum / arr.length}`);
 }
-console.log(`********Year End Total for All Bills********`);
+console.log(`********Year End Average of All Bills********`);
 calcT(totals);
