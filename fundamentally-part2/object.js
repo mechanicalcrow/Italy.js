@@ -152,10 +152,17 @@ const domID = document.querySelector("#output");
 // calcT(totals);
 const temp = [-2, -1, 0, "error", 1, 10, 11];
 const newArr = [];
-for (let i = 0; i < temp.length; i++) {
-  if (typeof temp[i] !== "number") continue;
-  let justNumbers = temp[i];
-  newArr.push(justNumbers);
-  //console.log(lowest);
+
+function rangeFinder(arr) {
+  console.log(`${Math.min(...arr) - Math.max(...arr)}`);
 }
-console.log(newArr);
+rangeFinder([1, 4, 6, -1, 5]);
+
+// for (let i = 0; i < temp.length; i++) {
+//   if (typeof temp[i] !== "number") continue;
+//   let justNumbers = temp[i];
+//   newArr.push(justNumbers);
+//   //console.log(lowest);
+// }
+
+// console.log(newArr);
