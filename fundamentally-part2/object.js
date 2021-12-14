@@ -151,9 +151,11 @@ const domID = document.querySelector("#output");
 // console.log(`********Year End Average of All Bills********`);
 // calcT(totals);
 const temp = [-2, -1, 0, "error", 1, 10, 11];
-
+const newArr = [];
 for (let i = 0; i < temp.length; i++) {
   if (typeof temp[i] !== "number") continue;
-  console.log(Math.min(...temp));
+  let justNumbers = temp[i];
+  newArr.push(justNumbers);
   //console.log(lowest);
 }
+console.log(newArr);
