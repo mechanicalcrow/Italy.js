@@ -1,6 +1,6 @@
 "use strict";
 
-const domID = document.querySelector("#output");
+const domID = document.querySelector("#domID");
 
 // const Mannerly = {
 //     fullName: "Mannerly Jones",
@@ -154,7 +154,7 @@ const temp = [-2, -1, 0, "error", 1, 10, 11];
 const newArr = [];
 
 function rangeFinder(arr) {
-  console.log(`${Math.max(...arr) - Math.min(...arr)}`);
+  return `${Math.max(...arr) - Math.min(...arr)}`;
 }
 
 for (let i = 0; i < temp.length; i++) {
@@ -163,4 +163,5 @@ for (let i = 0; i < temp.length; i++) {
   newArr.push(temp[i]);
 }
 
-rangeFinder(newArr);
+let answer = rangeFinder(newArr);
+domID.innerHTML = ` The amplitude of desert temps this night as been ${answer} degrees Celsius.`;
