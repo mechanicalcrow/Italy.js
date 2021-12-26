@@ -164,4 +164,4 @@ for (let i = 0; i < temp.length; i++) {
 }
 
 let answer = rangeFinder(newArr);
-domID.innerHTML = ` The amplitude of desert temps this night as been ${answer} degrees Celsius.`;
+domID.innerHTML = ` The amplitude of desert temps this night as been ${answer}&#8451.`;
